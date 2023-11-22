@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        const people = [
+  { firstName: 'mahesh', lastName: 'kumar' ,age:"21"},
+  { firstName: 'harsha', lastName: 'vardhan' ,age:"22"},
+  { firstName: 'bala', lastName: 'raju',age:"23" },
+  { firstName: 'pydi', lastName: 'raju',age:"22" },
+  { firstName: 'naveen', lastName: 'babu',age:"21" },
+
+];
+     
+      function filterbyage(people){
+            return people.age>21
+            
+        }
+        console.log(people.filter(filterbyage))
+
+        
+        function fullname(){
+            fullName=[]
+            for(i=0;i<people.length;i++){
+                fullName.push((people[i].firstName+" "+people[i].lastName))
+            }
+            return fullName
+
+
+        }
+        console.log(people.reduce(fullname))
+ 
+   
+    </script>
+</body>
+</html>
