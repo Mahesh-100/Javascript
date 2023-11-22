@@ -1,0 +1,16 @@
+<script>
+    //printing numbers like seconds on console
+       function mySeconds() {
+      for (let seconds = 0; seconds < 60; seconds++) {
+        setTimeout(() => {
+          console.clear(); // Clears the console to update the displayed time
+          console.log(seconds);
+        }, seconds * 1000);
+      }
+    }
+    
+    
+    // Call the function to start printing seconds
+    mySeconds();
+    </script>
+    
