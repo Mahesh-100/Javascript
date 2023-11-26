@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+   <script>
+    fruits=["banana","mango","apple","grapes","pineapple","orange",1,100,2,2]
+    document.write(fruits)
+    document.write("<br>"+fruits[3])
+    document.write("<br>"+fruits[6])
+    fruits[6]="pomegranate"
+    document.write("<br>"+fruits.push("lemon"))
+    document.write("<br>"+fruits.length)
+    document.write("<br>"+fruits.sort())
+    document.write("<br>"+fruits.shift())
+    document.write("<br>"+fruits.unshift("guava"))
+    document.write("<br>"+delete fruits[1])
+    document.write("<br>"+fruits)
+    veg=["brinjal","tomato","bitter gourd","peas","pumpkin"]
+    document.write("<br>"+fruits.concat(veg))
+    arr=[[1,2],[3,4],[5,6]]
+    document.write("<br>"+arr.flat())
+    document.write("<br>"+veg.splice(2,0,"drumsticks","bottle gourd"))
+    document.write("<br>"+veg.splice(3,1))
+    document.write("<br>"+veg)
+    document.write("<br>"+veg.reverse())
+    num=[62,57,87,19,34,65,98,80,33,43,66,68]
+    document.write("<br>"+num.sort())
+    document.write("<br>"+num.sort(function(a,b){return a-b}))
+    document.write("<br>Highest="+num[num.length-1])
+    document.write("<br>Lowest="+num[0])
+    document.write("<br>"+fruits)
+    document.write("<br>"+fruits.copyWithin(2, 0, 2));
+    document.write("<br>"+num.every(checkNum))
+    function checkNum(num)
+    {
+        return num>18
+    }
+    document.write("<br>"+fruits.fill("kiwi",6))
+    document.write("<br>"+num.filter(myfunction))
+    function myfunction(num)
+    {
+        return num>50
+    }
+    document.write("<br>"+num.find(my_function))
+    function my_function(num)
+    {
+        return num<50
+    }
+    document.write("<br>"+num.flatMap((x)=>x-10))
+    document.write("<br>"+Array.from("8978876751"))
+    document.write("<br>"+fruits.indexOf("apple",1))
+    document.write("<br>"+Array.isArray(fruits))
+    document.write("<br>"+fruits.join("*"))
+    document.write("<br>"+num.map(demo))
+    function demo(num)
+    {
+        return num*10
+    }
+
+
+</script>
+</body>
+</html>
