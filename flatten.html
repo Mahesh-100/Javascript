@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr=[1,[2,3],[4,5,6],[7,8],9]
+        document.write(arr)
+        document.write("<br>Lenghth of array before flatten="+arr.length)
+    
+        res=[]
+        function flatten(arr){
+            for(ind of arr){
+                if(Array.isArray(ind)){
+                    flatten(ind)
+                }
+                else {
+                    res.push(ind)
+                }
+            }
+        }
+        flatten(arr)
+        document.write("<br>"+res)
+        document.write("<br>Lenghth of array after flatten="+res.length)
+    </script>
+    </body>
+</html>
