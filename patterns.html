@@ -1,0 +1,31 @@
+<script>
+    //number patterns
+    // pattern 1
+    var m,n
+    for (m=1; m<=5; m++){
+      for(n=1; n<=m;n++){
+        document.write(n)
+        if(n==m)
+        continue;
+      else
+      document.write(' ');
+      }
+      document.write("<br>")
+    }
+    
+   
+    //pattern 3
+    var num=5
+    for (m=1; m<num; m++){
+      for (n=1;n<m;n++){
+        document.write(" "+n+" ")
+        }
+        document.write("<br>")
+    }
+    for (m=num; m>0; m--){
+      for (n=1;n<m;n++){
+        document.write(" "+n+" ")
+       }
+       document.write("<br>")
+    }
+</script>
