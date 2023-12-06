@@ -1,0 +1,33 @@
+<script>
+    // strings methods
+    str="mahesh how are you"
+    a=str.length
+    document.write(a)
+    b="Hi Good Morning \'mahesh\' Have \\a Nice Day"
+    document.write("<br>"+b)
+    c="hi good morning \"mahesh\" have a nice day, it\'s alright"
+    document.write("<br>"+c)
+    d=str.slice(0,4)
+    document.write("<br>"+d)
+    e=str.slice(2)
+    document.write("<br>"+e)
+    f=str.slice(-3)
+    document.write("<br>"+f)
+    g=str.substring(0,8)
+    document.write("<br>"+g)
+    h=str.substr(4,14)
+    document.write("<br>"+h)
+    i=str.replace("how are you","have a nice day")
+    document.write("<br>"+i)
+    document.write("<br>"+i.toUpperCase())
+    document.write("<br>"+b.toLowerCase())
+    document.write("<br>"+str.concat('',b))
+    j="       mahesh      hi"
+    document.write("<br>"+j.trim())
+    document.write("<br>"+j.trimStart())
+    k="5"
+    document.write("<br>"+k.padStart(4,"x"))
+    document.write("<br>"+k.padEnd(4,"x"))
+    document.write("<br>"+str.charAt(5))
+    document.write("<br>"+str.charCodeAt(5))
+</script>
