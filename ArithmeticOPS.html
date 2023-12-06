@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Operations on input numbers by selecting Operations by dropdown</title>
+   <script>
+    function calc(){
+      num1=parseInt(document.getElementById("num1").value);
+      num2=parseInt(document.getElementById("num2").value);
+      var opr=document.getElementById("operators").value;
+      if(opr==="+"){
+        document.getElementById("res").value=num1+num2;
+      }
+      if(opr==="-"){
+        document.getElementById("res").value=num1-num2;
+      }
+      if(opr==="*"){
+        document.getElementById("res").value=num1*num2;
+      }
+      if(opr==="/"){
+        document.getElementById("res").value=num1/num2;
+      }
+      if(opr==="%"){
+        document.getElementById("res").value=num1%num2;
+      }
+      if(opr==="**"){
+        document.getElementById("res").value=num1**num2;
+      }
+      }
+</script>
+</head>
+<body>
+  <label>num1</label>
+    <input type="number" id="num1"/>
+    <select id="operators">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+      <option value="**">**</option>
+    </select>
+    <label>num2</label>
+    <input type="number" id="num2"/>
+    <button  onclick="calc()">Calculate</button>
+    <input type="text" id="res"/>
+  </body>
+  </html>
